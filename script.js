@@ -1,5 +1,5 @@
 //Establish variables and grab tags from HTML
-var task = document.getElementById('task');
+var input = document.getElementById('task');
 var sumbit = document.QuerySelector('#submit')
 var clear = document.getElementById('clear')
 console.log(task)
@@ -9,12 +9,16 @@ console.log(clear)
 
 // submit input
 
-task.onsubmit = function(addTask){
-    return list;
-    console.log(list)
+input.onsubmit = function(addTask){
+    if (input.value != " "){
+        return input.value = addTask;
+        console.log(addTask);
+     input.value = ' '
+    }
 
 }
-addTask(submit)
+addTask()
+console.log(addTask)
 
 
 
