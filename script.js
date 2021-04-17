@@ -1,16 +1,20 @@
-// input.onclick event to insert text inside input field when clicked
+//Establish variables and grab tags from HTML
 var task = document.getElementById('task');
+var sumbit = document.QuerySelector('#submit')
+var clear = document.getElementById('clear')
+console.log(task)
+console.log(submit)
+console.log(clear)
 
 
+// submit input
 
-task.onclick = function(inserttask){
-    task.onsubmit = list;
-    console.log(task)
+task.onsubmit = function(addTask){
+    return list;
+    console.log(list)
 
 }
-
-inserttask(task)
-
+addTask(submit)
 
 
 
@@ -24,7 +28,6 @@ inserttask(task)
 
 
 //deleting item
-
 
 
 //clear list
