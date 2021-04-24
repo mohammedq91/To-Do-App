@@ -2,8 +2,6 @@ const form = document.querySelector('#form');
 var clear = document.querySelector('#clear') 
 const input = document.getElementById('task')
 var list = document.getElementById('taskList');
-const li = document.createElement('li')
-const removeButton = document.getElementById('remove')
 
 
 
@@ -19,30 +17,37 @@ form.addEventListener('click', function (e){
         // clearing input field after task submission
     input.value = "";
     };
+
 });
 
 function addTask(task){
-    // create new line
     const li = document.createElement('li');
+    const deleteButton = document.createElement('button')
+    deleteButton.textContent = " x ";
+    li.appendChild(deleteButton);
+    li.appendChild(document.createTextNode(input.value));
 
-     // add task to the new line
-    //li.textContent = input.value 
-
-    li.innerHTML = '<button id="remove"> x </button>' + input.value
-         
-    // append the new line to the task-listS
+    //li.innerHTML = '<button id="remove"> x </button>' + input.value
     list.appendChild(li);
+
+    deleteButton.addEventListener('click', function (){
+        //const button = e.target
+        li.remove()
+    });
+
 };
 
 clear.addEventListener('click', function(){
    list.innerHTML = "";
 });
 
-removeButton.onclick =function(){
-    //list.removeChild(li)
-    li.value =""
-    list.appendChild(li)
 
-};
+function strikeTask(e){
+    button = e.target
+    if (tick == "complete"){
+        tick.style.textDecoration = "line-through"
+    } else {
+        tick.style.textDecoration = "none"
+    }
+}
 
-// cross out task when completed
