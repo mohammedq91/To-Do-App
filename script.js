@@ -4,21 +4,18 @@ const input = document.getElementById('task')
 var list = document.getElementById('taskList');
 
 
-
-//load submit button event when task is enterered
-form.addEventListener('click', function (e){
+form.addEventListener('submit', function (e){
     e.preventDefault();
     
-    if (input.value == ""){
-       // window.alert("Please enter an item!")
+    if (input.value === ""){
+       window.alert("Please enter an item!");
     } else {
-        //(input.value != "");
         addTask(input.value);
-        // clearing input field after task submission
+  
     input.value = "";
     };
-
 });
+
 
 function addTask(task){
     const li = document.createElement('li');
@@ -26,28 +23,26 @@ function addTask(task){
     deleteButton.textContent = " x ";
     li.appendChild(deleteButton);
     li.appendChild(document.createTextNode(input.value));
-
-    //li.innerHTML = '<button id="remove"> x </button>' + input.value
     list.appendChild(li);
 
-    deleteButton.addEventListener('click', function (){
-        //const button = e.target
+
+    deleteButton.addEventListener('click', function (e){
         li.remove()
     });
 
+
+    li.addEventListener('click', function(e){
+        if (li.style.textDecoration ==="line-through"){
+            li.style.textDecoration = 'none'
+        } else {
+            li.style.textDecoration = "line-through"
+        };
+     });
+
 };
+
 
 clear.addEventListener('click', function(){
    list.innerHTML = "";
 });
-
-
-function strikeTask(e){
-    button = e.target
-    if (tick == "complete"){
-        tick.style.textDecoration = "line-through"
-    } else {
-        tick.style.textDecoration = "none"
-    }
-}
 
