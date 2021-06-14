@@ -4,7 +4,7 @@
 
 #### Play it [here](https://mohammedq91.github.io/To-Do-App/)
 
-![](DigitalClockAppPhoto.png)
+![](ToDoListPhoto.png)
 
 ## Summary
 
