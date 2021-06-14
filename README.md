@@ -8,9 +8,7 @@
 
 ## Summary
 
-After I enrolled in software development mentorship program back in March 2021, I was able to actually start building my first real world project (Digital Clock). Having a structured roadmap along with mentors' guidance, I quickly started to realize the importance of the baby steps needed to write each line of code and following along with what the logic is intented to do.
-
-In this project, I learned how several topics are being used in Javascript (i.e template literals, declaring a funcation, calling a function, storing date into a variable, const vs let vs var, conditional statement, and method vs property).
+This project helped me emphasize learning JavaScript topics that are mentioned in Digital Clock Summary Section. Also, I learned the followings: "adding and applying 'click/submit' click events to buttons when pressed; attaching and/or removing child line to/from parent when pressed on add/remove buttons; and applying strike-through.
 
 
 
