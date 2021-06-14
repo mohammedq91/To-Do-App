@@ -1,5 +1,5 @@
 const form = document.querySelector('#form');
-var clear = document.querySelector('#clear') 
+var clear = document.querySelector('#clear')
 const input = document.getElementById('task')
 var list = document.getElementById('taskList');
 
@@ -41,8 +41,8 @@ function addTask(task){
 
 };
 
-
 clear.addEventListener('click', function(){
-   list.innerHTML = "";
+   //list.innerHTML = "";
+   list.remove()
 });
 
