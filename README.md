@@ -2,7 +2,7 @@
 
 #### A simple To-Do-App written entirely in Javascript, HTML, and CSS.
 
-#### Play it [here](http://127.0.0.1:5500/index.html?)
+#### Play it [here](https://mohammedq91.github.io/To-Do-App/)
 
 ![](DigitalClockAppPhoto.png)
 
