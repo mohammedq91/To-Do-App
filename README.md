@@ -8,7 +8,7 @@
 
 ## Summary
 
-This project helped me emphasize learning JavaScript topics that are mentioned in Digital Clock Summary Section. Also, I learned the followings: "adding and applying 'click/submit' click events to buttons when pressed; attaching and/or removing child line to/from parent when pressed on add/remove buttons; and applying strike-through.
+This project helped me emphasize learning JavaScript topics that are mentioned in Digital Clock Summary Section. Also, I learned the followings: "adding and applying 'click/submit' events to buttons when pressed; attaching and/or removing child line to/from parent when pressed on add/remove buttons; and applying strike-through.
 
 
 
